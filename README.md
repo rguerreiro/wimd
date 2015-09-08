@@ -65,6 +65,8 @@ It accepts an object with only the config options you which to override (go [her
     </tr>
 </table>
 
+In case you didn't notice there's also a method **is()** that will return a boolean (true or false) when you pass the device type that you want validate against (check the initial example).
+
 ## contributors
 
 Some contributed in the [express-device](https://github.com/rguerreiro/express-device) repository.
