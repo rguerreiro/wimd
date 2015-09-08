@@ -1,0 +1,26 @@
+{
+  "name": "wimd",
+  "author": "Rodrigo Guerreiro (@rguerreiro)",
+  "description": "What Is My Device? Is a device type detection library based on the useragent string. Refactored from express-device.",
+  "keywords": ["browser","mobile","detection","user-agent","useragent","desktop","phone","tablet","tv","bot","parsing","device"],
+  "version": "0.5.0",
+  "main": "./index.js",
+  "private": false,
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {
+    "useragent": "*"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rguerreiro/wimd.git"
+  }
+}
