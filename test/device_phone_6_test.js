@@ -1772,4 +1772,10 @@ describe('device', function() {
             assert.equal(mydevice.type, 'phone');
         });
     });
+    describe('Phone device type check with is method', function () {
+        it('should get true', function () {
+            var mydevice = wimd('iPhone');
+            assert.equal(mydevice.is('phone'), true);
+        });
+    });
 });

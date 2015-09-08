@@ -164,4 +164,10 @@ describe('device', function() {
             assert.equal(mydevice.type, 'tv');
         });
     });
+    describe('TV device type check with is method', function () {
+        it('should get true', function () {
+            var mydevice = wimd('PlayStation 3');
+            assert.equal(mydevice.is('tv'), true);
+        });
+    });
 });

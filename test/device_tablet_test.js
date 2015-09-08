@@ -986,4 +986,16 @@ describe('device', function() {
             assert.equal(mydevice.type, 'tablet');
         });
     });
+    describe('Tablet device type check with is method', function () {
+        it('should get true', function () {
+            var mydevice = wimd('iPad');
+            assert.equal(mydevice.is('tablet'), true);
+        });
+    });
+    describe('Phone (but it is a tablet) device type check with is method', function () {
+        it('should get false', function () {
+            var mydevice = wimd('iPad');
+            assert.equal(mydevice.is('phone'), false);
+        });
+    });
 });

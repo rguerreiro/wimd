@@ -506,4 +506,10 @@ describe('device', function() {
             assert.equal(mydevice.type, 'desktop');
         });
     });
+    describe('Desktop device type check with is method', function () {
+        it('should get true', function () {
+            var mydevice = wimd('Mozilla/5.0 (X11; CrOS i686 0.12.433) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.77 Safari/534.30');
+            assert.equal(mydevice.is('desktop'), true);
+        });
+    });
 });

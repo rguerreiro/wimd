@@ -452,4 +452,10 @@ describe('device', function() {
             assert.equal(mydevice.type, 'bot');
         });
     });
+    describe('Bot device type check with is method', function () {
+        it('should get true', function () {
+            var mydevice = wimd('Facebot');
+            assert.equal(mydevice.is('bot'), true);
+        });
+    });
 });
